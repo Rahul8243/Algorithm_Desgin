@@ -12,7 +12,6 @@ def knapsack(weights, values, W):
             else:
                 dp[i][w] = dp[i-1][w]
 
-    # Maximum value
     max_value = dp[n][W]
 
     # Trace back to find selected items
